@@ -138,28 +138,28 @@ export default function ProjectsSection() {
         open={selectedProject !== null} 
         onOpenChange={(open) => !open && setSelectedProject(null)}
       >
-        <DialogContent className="max-w-[95vw] w-[95vw] h-[90vh] max-h-[90vh] p-0 rounded-xl overflow-hidden border border-primary-cyan/30 bg-dark-800">
+        <DialogContent className="max-w-[100vw] w-[100vw] h-[95vh] max-h-[95vh] p-0 rounded-none overflow-hidden border-t border-primary-cyan/30 bg-dark-800">
           <div className="flex flex-col h-full">
-            <DialogHeader className="p-4 border-b border-primary-cyan/20 flex flex-row justify-between items-center">
+            <DialogHeader className="p-4 border-b border-primary-cyan/20">
               <DialogTitle className="text-2xl font-display text-primary-cyan">
                 {selectedProject?.title}
               </DialogTitle>
-              <Button 
-                variant="ghost" 
-                size="icon"
-                onClick={() => setSelectedProject(null)}
-                className="text-light/70 hover:text-light"
-              >
-                <X className="h-5 w-5" />
-              </Button>
             </DialogHeader>
             
             <div className="flex-grow h-full overflow-hidden">
               {selectedProject && (
                 <iframe 
                   src="https://klara-dental-care.replit.app/"
-                  className="w-full h-full border-0" 
+                  className="w-full h-full border-0 overflow-x-hidden touch-pan-y" 
                   title={selectedProject.title}
+                  scrolling="yes"
+                  style={{ 
+                    overflow: 'hidden', 
+                    overflowX: 'hidden',
+                    width: '100%',
+                    maxWidth: '100%',
+                    touchAction: 'pan-y'
+                  }}
                 ></iframe>
               )}
             </div>
