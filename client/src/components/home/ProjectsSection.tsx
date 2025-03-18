@@ -3,15 +3,15 @@
 import { useState } from 'react';
 import { motion } from "framer-motion";
 import { useLanguage } from "@/hooks/useLanguage";
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import { X, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
 interface Project {
   id: number;
   title: string;
   description: string;
   image: string;
-  demoUrl: string;
 }
 
 export default function ProjectsSection() {
@@ -23,152 +23,149 @@ export default function ProjectsSection() {
       id: 1,
       title: t('projects.project1.title'),
       description: t('projects.project1.description'),
-      image: "https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      demoUrl: "https://replit.com/"
+      image: "https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 2,
       title: t('projects.project2.title'),
       description: t('projects.project2.description'),
-      image: "https://images.unsplash.com/photo-1558655146-d09347e92766?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      demoUrl: "https://replit.com/@replit/nodejs-template"
+      image: "https://images.unsplash.com/photo-1558655146-d09347e92766?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 3,
       title: t('projects.project3.title'),
       description: t('projects.project3.description'),
-      image: "https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      demoUrl: "https://replit.com/@replit/react"
+      image: "https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 4,
       title: t('projects.project4.title'),
       description: t('projects.project4.description'),
-      image: "https://images.unsplash.com/photo-1579567761406-4684ee0c75b6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      demoUrl: "https://replit.com/@replit/nextjs"
+      image: "https://images.unsplash.com/photo-1579567761406-4684ee0c75b6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 5,
       title: t('projects.project5.title'),
       description: t('projects.project5.description'),
-      image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      demoUrl: "https://replit.com/@replit/html-css-js"
+      image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 6,
       title: t('projects.project6.title'),
       description: t('projects.project6.description'),
-      image: "https://images.unsplash.com/photo-1624705025053-1ee391e11c1a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      demoUrl: "https://replit.com/@replit/python"
+      image: "https://images.unsplash.com/photo-1624705025053-1ee391e11c1a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     }
   ];
   
-  // Projects Demo View
-  if (selectedProject) {
-    return (
-      <section id="projects" className="py-24 relative overflow-hidden">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="mb-8">
-            <Button 
-              variant="ghost" 
-              onClick={() => setSelectedProject(null)}
-              className="flex items-center text-primary-cyan hover:text-primary-cyan/80"
-            >
-              <ArrowLeft className="mr-2 h-5 w-5" />
-              <span>{t('projects.backToProjects')}</span>
-            </Button>
-          </div>
-          
-          <div className="mb-8">
-            <h2 className="text-3xl font-bold font-display mb-4">{selectedProject.title}</h2>
-            <p className="text-xl text-light/70 mb-6">{selectedProject.description}</p>
-          </div>
-          
-          <div className="bg-dark-800 rounded-xl overflow-hidden shadow-2xl border border-primary-cyan/30">
-            <iframe 
-              src={selectedProject.demoUrl} 
-              className="w-full h-[70vh] border-0" 
-              title={selectedProject.title}
-            ></iframe>
-          </div>
-        </div>
-      </section>
-    );
-  }
-  
   // Projects List View
   return (
-    <section id="projects" className="py-24 relative overflow-hidden">
-      {/* Geometric background patterns */}
-      <div className="absolute top-0 right-0 w-full h-full bg-[url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80')] bg-no-repeat bg-cover opacity-5"></div>
-      
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Section Header */}
-        <motion.div 
-          className="text-center mb-16"
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.1 }}
-          transition={{ duration: 0.5 }}
-        >
-          <h2 className="text-4xl font-bold font-display mb-4 bg-gradient-to-r from-accent-yellow to-primary-cyan text-gradient">
-            {t('projects.title')}
-          </h2>
-          <p className="text-xl text-light/70 max-w-3xl mx-auto">
-            {t('projects.subtitle')}
-          </p>
-        </motion.div>
+    <>
+      <section id="projects" className="py-24 relative overflow-hidden">
+        {/* Geometric background patterns */}
+        <div className="absolute top-0 right-0 w-full h-full bg-[url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80')] bg-no-repeat bg-cover opacity-5"></div>
         
-        {/* Projects Grid */}
-        <motion.div 
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.1 }}
-          variants={{
-            hidden: { opacity: 0 },
-            visible: {
-              opacity: 1,
-              transition: {
-                staggerChildren: 0.1
-              }
-            }
-          }}
-        >
-          {projects.map((project) => (
-            <motion.div 
-              key={project.id}
-              className="group relative overflow-hidden rounded-lg neon-border cursor-pointer"
-              variants={{
-                hidden: { opacity: 0, y: 20 },
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                  transition: { duration: 0.5 }
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          {/* Section Header */}
+          <motion.div 
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="text-4xl font-bold font-display mb-4 bg-gradient-to-r from-accent-yellow to-primary-cyan text-gradient">
+              {t('projects.title')}
+            </h2>
+            <p className="text-xl text-light/70 max-w-3xl mx-auto">
+              {t('projects.subtitle')}
+            </p>
+          </motion.div>
+          
+          {/* Projects Grid */}
+          <motion.div 
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: {
+                opacity: 1,
+                transition: {
+                  staggerChildren: 0.1
                 }
-              }}
-              onClick={() => setSelectedProject(project)}
-            >
-              {/* Project Image */}
-              <img 
-                src={project.image} 
-                alt={project.title} 
-                className="w-full h-72 object-cover object-center transition-transform duration-500 group-hover:scale-110"
-              />
-              
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                <h3 className="text-2xl font-display font-bold text-primary-cyan mb-2">{project.title}</h3>
-                <p className="text-light/80 mb-4">{project.description}</p>
-                <Button variant="default" className="mt-2 flex items-center gap-2 w-fit">
-                  <span>{t('projects.viewDemo')}</span>
-                  <ExternalLink className="h-4 w-4" />
-                </Button>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
-      </div>
-    </section>
+              }
+            }}
+          >
+            {projects.map((project) => (
+              <motion.div 
+                key={project.id}
+                className="group relative overflow-hidden rounded-lg neon-border cursor-pointer"
+                variants={{
+                  hidden: { opacity: 0, y: 20 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 0.5 }
+                  }
+                }}
+                onClick={() => setSelectedProject(project)}
+              >
+                {/* Project Image */}
+                <img 
+                  src={project.image} 
+                  alt={project.title} 
+                  className="w-full h-72 object-cover object-center transition-transform duration-500 group-hover:scale-110"
+                />
+                
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                  <h3 className="text-2xl font-display font-bold text-primary-cyan mb-2">{project.title}</h3>
+                  <p className="text-light/80 mb-4">{project.description}</p>
+                  <Button variant="default" className="mt-2 flex items-center gap-2 w-fit">
+                    <span>{t('projects.viewDemo')}</span>
+                    <ExternalLink className="h-4 w-4" />
+                  </Button>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Project Demo Modal */}
+      <Dialog 
+        open={selectedProject !== null} 
+        onOpenChange={(open) => !open && setSelectedProject(null)}
+      >
+        <DialogContent className="max-w-[95vw] w-[95vw] h-[90vh] max-h-[90vh] p-0 rounded-xl overflow-hidden border border-primary-cyan/30 bg-dark-800">
+          <div className="flex flex-col h-full">
+            <DialogHeader className="p-4 border-b border-primary-cyan/20 flex flex-row justify-between items-center">
+              <DialogTitle className="text-2xl font-display text-primary-cyan">
+                {selectedProject?.title}
+              </DialogTitle>
+              <Button 
+                variant="ghost" 
+                size="icon"
+                onClick={() => setSelectedProject(null)}
+                className="text-light/70 hover:text-light"
+              >
+                <X className="h-5 w-5" />
+              </Button>
+            </DialogHeader>
+            
+            <div className="flex-grow h-full overflow-hidden">
+              {selectedProject && (
+                <iframe 
+                  src="https://klara-dental-care.replit.app/"
+                  className="w-full h-full border-0" 
+                  title={selectedProject.title}
+                ></iframe>
+              )}
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
+    </>
   );
 }
