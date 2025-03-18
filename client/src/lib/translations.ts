@@ -43,10 +43,10 @@ export const translations = {
       dataDescription: 'Transforming complex data into actionable insights through advanced analytics, visualization, and AI-powered predictions.',
       ai: 'AI Solutions',
       aiDescription: 'Implementing artificial intelligence and machine learning to automate processes, enhance decision-making, and create smarter systems.',
-      blockchain: 'Blockchain Development',
-      blockchainDescription: 'Creating secure, decentralized applications and smart contracts using cutting-edge blockchain technologies and protocols.',
-      ar: 'AR/VR Experiences',
-      arDescription: 'Developing immersive augmented and virtual reality applications that transform how users interact with digital content.',
+      security: 'Cybersecurity',
+      securityDescription: 'Protecting your digital assets with advanced security solutions, vulnerability assessments, and comprehensive threat monitoring.',
+      cloud: 'Cloud Services',
+      cloudDescription: 'Leveraging cloud platforms to build scalable, resilient infrastructure and services that adapt to your business needs.',
       learnMore: 'Learn more'
     },
     projects: {
@@ -57,20 +57,20 @@ export const translations = {
         web: 'Web',
         mobile: 'Mobile',
         ai: 'AI',
-        blockchain: 'Blockchain',
-        ar: 'AR/VR'
+        security: 'Security',
+        cloud: 'Cloud'
       },
       project1: {
         title: 'NeoFuture Platform',
         description: 'Advanced web application with AI-driven analytics and interactive dashboards.'
       },
       project2: {
-        title: 'CyberMetro AR',
-        description: 'Augmented reality city guide with real-time data integration and immersive navigation.'
+        title: 'SecureGuard',
+        description: 'Comprehensive cybersecurity platform with real-time threat detection and automated incident response.'
       },
       project3: {
-        title: 'DecentralChain',
-        description: 'Innovative blockchain platform for secure, transparent asset management and smart contracts.'
+        title: 'CloudNexus',
+        description: 'Advanced cloud infrastructure management system with multi-cloud integration and intelligent resource allocation.'
       },
       project4: {
         title: 'DataNexus',
@@ -199,10 +199,10 @@ export const translations = {
       dataDescription: 'Transformimi i të dhënave komplekse në njohuri të veprueshme përmes analizave të avancuara, vizualizimit dhe parashikimeve të fuqizuara nga AI.',
       ai: 'Zgjidhjet AI',
       aiDescription: 'Implementimi i inteligjencës artificiale dhe mësimit të makinerisë për të automatizuar proceset, përmirësuar vendimmarrjen dhe krijuar sisteme më inteligjente.',
-      blockchain: 'Zhvillimi i Blockchain',
-      blockchainDescription: 'Krijimi i aplikacioneve të sigurta, të decentralizuara dhe kontratave inteligjente duke përdorur teknologjitë dhe protokollet më të fundit blockchain.',
-      ar: 'Përvojat AR/VR',
-      arDescription: 'Zhvillimi i aplikacioneve imersive të realitetit të shtuar dhe virtual që transformojnë mënyrën se si përdoruesit ndërveprojnë me përmbajtjen dixhitale.',
+      security: 'Siguria Kibernetike',
+      securityDescription: 'Mbrojtja e aseteve tuaja dixhitale me zgjidhje të avancuara të sigurisë, vlerësime të cënueshmërisë dhe monitorim gjithëpërfshirës të kërcënimeve.',
+      cloud: 'Shërbimet Cloud',
+      cloudDescription: 'Shfrytëzimi i platformave cloud për të ndërtuar infrastrukturë dhe shërbime të shkallëzueshme dhe elastike që përshtaten me nevojat e biznesit tuaj.',
       learnMore: 'Mëso më shumë'
     },
     projects: {
@@ -213,20 +213,20 @@ export const translations = {
         web: 'Ueb',
         mobile: 'Mobile',
         ai: 'AI',
-        blockchain: 'Blockchain',
-        ar: 'AR/VR'
+        security: 'Siguria',
+        cloud: 'Cloud'
       },
       project1: {
         title: 'Platforma NeoFuture',
         description: 'Aplikacion web i avancuar me analitikë të drejtuar nga AI dhe panele interaktive.'
       },
       project2: {
-        title: 'CyberMetro AR',
-        description: 'Udhëzues qyteti me realitet të shtuar me integrim të të dhënave në kohë reale dhe navigim imersiv.'
+        title: 'SecureGuard',
+        description: 'Platformë gjithëpërfshirëse e sigurisë kibernetike me zbulim të kërcënimeve në kohë reale dhe përgjigje të automatizuar ndaj incidenteve.'
       },
       project3: {
-        title: 'DecentralChain',
-        description: 'Platformë inovative blockchain për menaxhim të sigurt, transparent të aseteve dhe kontrata inteligjente.'
+        title: 'CloudNexus',
+        description: 'Sistem i avancuar i menaxhimit të infrastrukturës cloud me integrim multi-cloud dhe shpërndarje inteligjente të burimeve.'
       },
       project4: {
         title: 'DataNexus',

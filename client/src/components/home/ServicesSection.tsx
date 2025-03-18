@@ -3,8 +3,8 @@
 import { motion } from "framer-motion";
 import { useLanguage } from "@/hooks/useLanguage";
 import { 
-  Monitor, Smartphone, BarChart3, Brain, 
-  CreditCard, Glasses 
+  Monitor, Smartphone, BarChart3, Brain,
+  Shield, Server
 } from "lucide-react";
 
 interface ServiceCard {
@@ -73,9 +73,9 @@ export default function ServicesSection() {
       linkText: t('services.learnMore')
     },
     {
-      icon: <CreditCard className="h-8 w-8 text-secondary-pink" />,
-      title: t('services.blockchain'),
-      description: t('services.blockchainDescription'),
+      icon: <Shield className="h-8 w-8 text-secondary-pink" />,
+      title: t('services.security'),
+      description: t('services.securityDescription'),
       color: 'bg-secondary-pink/10',
       hoverColor: 'bg-secondary-pink/20',
       borderColor: 'border-secondary-pink/20',
@@ -85,9 +85,9 @@ export default function ServicesSection() {
       linkText: t('services.learnMore')
     },
     {
-      icon: <Glasses className="h-8 w-8 text-accent-yellow" />,
-      title: t('services.ar'),
-      description: t('services.arDescription'),
+      icon: <Server className="h-8 w-8 text-accent-yellow" />,
+      title: t('services.cloud'),
+      description: t('services.cloudDescription'),
       color: 'bg-accent-yellow/10',
       hoverColor: 'bg-accent-yellow/20',
       borderColor: 'border-accent-yellow/20',
