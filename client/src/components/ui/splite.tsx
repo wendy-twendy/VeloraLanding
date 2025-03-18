@@ -20,7 +20,7 @@ export function SplineScene({ scene, className }: SplineSceneProps) {
       <div className="spline-container w-full h-full overflow-hidden">
         <Spline
           scene={scene}
-          className={`${className} scale-[0.85] sm:scale-100 origin-center`}
+          className={`${className} scale-[1.15] sm:scale-[1.25] origin-center`}
         />
       </div>
     </Suspense>

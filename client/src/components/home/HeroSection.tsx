@@ -49,7 +49,7 @@ export default function HeroSection() {
             </motion.div>
 
             {/* Right content - 3D Spline Scene */}
-            <div className="flex-1 relative h-[300px] md:h-full">
+            <div className="flex-1 relative h-[360px] md:h-full">
               <SplineScene 
                 scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
                 className="w-full h-full object-contain"

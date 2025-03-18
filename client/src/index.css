@@ -139,4 +139,15 @@
     object-fit: contain;
     object-position: center;
   }
+  
+  /* Target the robot 3D model in the hero section specifically */
+  #hero .spline-container {
+    transform: translateY(-5%);
+    margin-top: 20px;
+  }
+  
+  #hero .spline-container canvas {
+    transform-origin: center center;
+    transform: scale(1.1) !important;
+  }
 }
