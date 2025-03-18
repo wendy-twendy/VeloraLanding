@@ -83,7 +83,9 @@ export const translations = {
       project6: {
         title: 'ImmerseTech VR',
         description: 'Virtual reality training platform with real-time feedback and adaptive learning algorithms.'
-      }
+      },
+      viewDemo: 'View Demo',
+      backToProjects: 'Back to Projects'
     },
     testimonials: {
       title: 'Client Testimonials',
@@ -239,7 +241,9 @@ export const translations = {
       project6: {
         title: 'ImmerseTech VR',
         description: 'Platformë trajnimi në realitet virtual me feedback në kohë reale dhe algoritme adaptive të të mësuarit.'
-      }
+      },
+      viewDemo: 'Shiko Demonstrimin',
+      backToProjects: 'Kthehu te Projektet'
     },
     testimonials: {
       title: 'Dëshmitë e Klientëve',
