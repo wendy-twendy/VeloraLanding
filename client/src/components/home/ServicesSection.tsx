@@ -118,31 +118,31 @@ export default function ServicesSection() {
   };
   
   return (
-    <section id="services" className="py-24 relative overflow-hidden bg-dark cyber-grid">
+    <section id="services" className="py-16 sm:py-20 md:py-24 relative overflow-hidden bg-dark cyber-grid">
       {/* Background decorative elements */}
       <div className="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-primary-cyan/5 to-transparent"></div>
       <div className="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-t from-primary-magenta/5 to-transparent"></div>
       
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container mx-auto px-3 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <motion.div 
-          className="text-center mb-16"
+          className="text-center mb-10 sm:mb-16"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-4xl font-bold font-display mb-4 bg-gradient-to-r from-primary-magenta to-accent-green text-gradient">
+          <h2 className="text-3xl sm:text-4xl font-bold font-display mb-3 sm:mb-4 bg-gradient-to-r from-primary-magenta to-accent-green text-gradient">
             {t('services.title')}
           </h2>
-          <p className="text-xl text-light/70 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-light/70 max-w-3xl mx-auto px-2">
             {t('services.subtitle')}
           </p>
         </motion.div>
         
         {/* Services Grid */}
         <motion.div 
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -151,23 +151,23 @@ export default function ServicesSection() {
           {services.map((service, index) => (
             <motion.div 
               key={index}
-              className={`group bg-dark/50 rounded-lg p-6 backdrop-blur-sm border ${service.borderColor} hover:${service.hoverBorderColor} transition-all duration-300 hover:${service.shadowColor} relative overflow-hidden`}
+              className={`group bg-dark/50 rounded-lg p-4 sm:p-6 backdrop-blur-sm border ${service.borderColor} hover:${service.hoverBorderColor} transition-all duration-300 hover:${service.shadowColor} relative overflow-hidden`}
               variants={itemVariants}
             >
               <div className="absolute inset-0 bg-gradient-to-br from-primary-cyan/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               {/* Icon */}
-              <div className={`p-4 rounded-full ${service.color} inline-flex items-center justify-center mb-6 group-hover:${service.hoverColor} transition-colors duration-300`}>
+              <div className={`p-3 sm:p-4 rounded-full ${service.color} inline-flex items-center justify-center mb-4 sm:mb-6 group-hover:${service.hoverColor} transition-colors duration-300`}>
                 {service.icon}
               </div>
               
-              <h3 className={`text-2xl font-display font-bold text-light mb-3 group-hover:${service.textColor} transition-colors duration-300`}>
+              <h3 className={`text-xl sm:text-2xl font-display font-bold text-light mb-2 sm:mb-3 group-hover:${service.textColor} transition-colors duration-300`}>
                 {service.title}
               </h3>
-              <p className="text-light/70 mb-6">{service.description}</p>
+              <p className="text-sm sm:text-base text-light/70 mb-4 sm:mb-6">{service.description}</p>
               
-              <a href="#" className={`inline-flex items-center ${service.textColor} hover:text-accent-green transition-colors duration-300`}>
+              <a href="#" className={`inline-flex items-center ${service.textColor} hover:text-accent-green transition-colors duration-300 text-sm sm:text-base`}>
                 <span>{service.linkText}</span>
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1 group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 sm:h-5 sm:w-5 ml-1 group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
               </a>

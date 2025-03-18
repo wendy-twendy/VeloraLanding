@@ -5,7 +5,8 @@ export const translations = {
       services: 'Services',
       projects: 'Projects',
       testimonials: 'Testimonials',
-      contact: 'Contact'
+      contact: 'Contact',
+      language: 'Language'
     },
     hero: {
       title: 'Interactive 3D',
@@ -159,7 +160,8 @@ export const translations = {
       services: 'Shërbimet',
       projects: 'Projektet',
       testimonials: 'Dëshmitë',
-      contact: 'Kontakt'
+      contact: 'Kontakt',
+      language: 'Gjuha'
     },
     hero: {
       title: '3D Interaktive',
