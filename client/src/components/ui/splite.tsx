@@ -17,10 +17,12 @@ export function SplineScene({ scene, className }: SplineSceneProps) {
         </div>
       }
     >
-      <Spline
-        scene={scene}
-        className={className}
-      />
+      <div className="spline-container w-full h-full overflow-hidden">
+        <Spline
+          scene={scene}
+          className={`${className} scale-[0.85] sm:scale-100 origin-center`}
+        />
+      </div>
     </Suspense>
   )
 }
