@@ -9,14 +9,14 @@ export const translations = {
       language: 'Language'
     },
     hero: {
-      title: 'Interactive 3D',
-      description: 'Bring your UI to life with beautiful 3D scenes. Create immersive experiences that capture attention and enhance your design.',
+      title: 'Futuristic Tech Solutions',
+      description: 'Transforming digital experiences with cutting-edge technology. We create innovative solutions that elevate your business and captivate your audience.',
       servicesButton: 'Our Services',
       contactButton: 'Contact Us'
     },
     about: {
       title: 'About Velora Tech',
-      subtitle: 'A technology company at the forefront of digital innovation, offering advanced solutions across multiple domains.',
+      subtitle: 'A new technology company at the forefront of digital innovation, offering advanced solutions tailored to modern business needs.',
       vision: {
         title: 'Our Vision',
         description: 'Velora Tech aims to reshape the digital landscape through innovative solutions that bridge technology gaps and create transformative user experiences.'
@@ -25,10 +25,11 @@ export const translations = {
         title: 'Our Approach',
         description: 'We combine cutting-edge technologies with human-centered design principles to deliver solutions that are not only technologically advanced but also intuitive and accessible.'
       },
-      timeline: {
-        2018: 'Founded with a mission to drive digital transformation',
-        2020: 'Expanded to international markets with innovative solutions',
-        2023: 'Pioneered new approaches in AI and immersive technologies'
+      goals: {
+        title: 'Our Future Goals',
+        innovation: 'Becoming a leading innovator in digital transformation through cutting-edge technology solutions.',
+        expansion: 'Expanding our reach to serve clients globally with scalable solutions that address diverse market needs.',
+        sustainability: 'Developing solutions that contribute to a more sustainable digital ecosystem.'
       }
     },
     services: {
@@ -164,14 +165,14 @@ export const translations = {
       language: 'Gjuha'
     },
     hero: {
-      title: '3D Interaktive',
-      description: 'Sillni në jetë UI-n tuaj me skena të bukura 3D. Krijoni përvoja tërheqëse që kapin vëmendjen dhe përmirësojnë dizajnin tuaj.',
+      title: 'Zgjidhje Teknologjike Futuriste',
+      description: 'Transformimi i përvojave dixhitale me teknologji moderne. Ne krijojmë zgjidhje inovative që ngrejnë biznesin tuaj dhe tërheqin audiencën tuaj.',
       servicesButton: 'Shërbimet Tona',
       contactButton: 'Na Kontaktoni'
     },
     about: {
       title: 'Rreth Velora Tech',
-      subtitle: 'Një kompani teknologjike në avangardë të inovacionit dixhital, që ofron zgjidhje të avancuara në shumë fusha.',
+      subtitle: 'Një kompani e re teknologjike në avangardë të inovacionit dixhital, që ofron zgjidhje të avancuara të përshtatura për nevojat e biznesit modern.',
       vision: {
         title: 'Vizioni Ynë',
         description: 'Velora Tech synon të riformojë peizazhin dixhital përmes zgjidhjeve inovative që mbyllin boshllëqet teknologjike dhe krijojnë përvoja transformuese për përdoruesit.'
@@ -180,10 +181,11 @@ export const translations = {
         title: 'Qasja Jonë',
         description: 'Ne kombinojmë teknologjitë më të fundit me parimet e dizajnit të përqendruar te njeriu për të ofruar zgjidhje që janë jo vetëm të avancuara teknologjikisht, por edhe intuitive dhe të aksesueshme.'
       },
-      timeline: {
-        2018: 'Themeluar me misionin për të drejtuar transformimin dixhital',
-        2020: 'Zgjeruar në tregjet ndërkombëtare me zgjidhje inovative',
-        2023: 'Pionierë në qasjet e reja në AI dhe teknologjitë imersive'
+      goals: {
+        title: 'Objektivat Tona për të Ardhmen',
+        innovation: 'Të bëhemi një udhëheqës inovator në transformimin dixhital përmes zgjidhjeve teknologjike të avancuara.',
+        expansion: 'Të zgjerojmë përfshirjen tonë për të shërbyer klientët globalisht me zgjidhje të shkallëzueshme që adresojnë nevoja të ndryshme të tregut.',
+        sustainability: 'Të zhvillojmë zgjidhje që kontribuojnë në një ekosistem dixhital më të qëndrueshëm.'
       }
     },
     services: {

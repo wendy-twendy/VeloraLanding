@@ -18,10 +18,10 @@ export default function AboutSection() {
     })
   };
   
-  const timeline = [
-    { year: '2018', text: t('about.timeline.2018') },
-    { year: '2020', text: t('about.timeline.2020') },
-    { year: '2023', text: t('about.timeline.2023') }
+  const goals = [
+    { title: 'Innovation Leadership', text: 'Becoming a leading innovator in digital transformation through cutting-edge technology solutions and creative approaches.' },
+    { title: 'Global Expansion', text: 'Expanding our reach to serve clients globally with scalable solutions that address diverse market needs.' },
+    { title: 'Sustainable Technology', text: 'Developing solutions that not only meet current needs but contribute to a more sustainable digital ecosystem.' }
   ];
   
   return (
@@ -59,8 +59,8 @@ export default function AboutSection() {
           >
             <div className="rounded-lg overflow-hidden neon-border">
               <img 
-                src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                alt="Tech company workplace" 
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                alt="Modern tech workspace" 
                 className="w-full h-auto rounded-lg"
               />
             </div>
@@ -95,11 +95,12 @@ export default function AboutSection() {
               <p className="text-light/80">{t('about.approach.description')}</p>
             </motion.div>
             
-            {/* Timeline-style milestones */}
+            {/* Future Goals Section */}
             <div className="relative pl-8 border-l border-primary-cyan/30 space-y-8">
-              {timeline.map((item, index) => (
+              <h3 className="text-2xl font-display font-bold text-accent-yellow -ml-8 mb-6">Our Future Goals</h3>
+              {goals.map((item, index) => (
                 <motion.div 
-                  key={item.year}
+                  key={item.title}
                   className="relative"
                   initial="hidden"
                   whileInView="visible"
@@ -113,7 +114,7 @@ export default function AboutSection() {
                     'bg-accent-green'
                   } animate-pulse-glow`}></div>
                   <div>
-                    <h4 className="text-xl font-mono text-accent-yellow">{item.year}</h4>
+                    <h4 className="text-xl font-display text-primary-foreground">{item.title}</h4>
                     <p className="text-light/80">{item.text}</p>
                   </div>
                 </motion.div>
