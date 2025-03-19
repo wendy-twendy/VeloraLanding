@@ -6,48 +6,61 @@ export const translations = {
       projects: 'Projects',
       testimonials: 'Testimonials',
       contact: 'Contact',
-      language: 'Language'
+      language: 'Language',
+      industries: 'Industries',
+      hosting: 'Hosting',
+      support: '24/7 Support'
     },
     hero: {
-      title: 'Futuristic Tech Solutions',
-      description: 'Transforming digital experiences with cutting-edge technology. We create innovative solutions that elevate your business and captivate your audience.',
-      servicesButton: 'Our Services',
-      contactButton: 'Contact Us'
+      title: 'Custom Software Solutions That Drive Growth',
+      description: 'Partner with Velora Tech to transform your business with tailored software solutions. From e-commerce platforms to AI-powered applications, we deliver cutting-edge technology that generates real results and measurable ROI.',
+      servicesButton: 'Explore Solutions',
+      contactButton: 'Get a Free Consultation'
     },
     about: {
-      title: 'About Velora Tech',
-      subtitle: 'A new technology company at the forefront of digital innovation, offering advanced solutions tailored to modern business needs.',
+      title: 'Why Velora Tech Is Your Ideal Technology Partner',
+      subtitle: 'Since our founding, we\'ve helped businesses across industries achieve digital transformation with custom software solutions that deliver measurable results.',
       vision: {
-        title: 'Our Vision',
-        description: 'Velora Tech aims to reshape the digital landscape through innovative solutions that bridge technology gaps and create transformative user experiences.'
+        title: 'Your Success Is Our Priority',
+        description: 'At Velora Tech, we don\'t just build software - we build long-term partnerships. Our dedicated team works closely with you to understand your unique challenges and develop solutions that drive real business growth.'
       },
       approach: {
-        title: 'Our Approach',
-        description: 'We combine cutting-edge technologies with human-centered design principles to deliver solutions that are not only technologically advanced but also intuitive and accessible.'
+        title: 'End-to-End Excellence',
+        description: 'From initial consultation to ongoing support, we provide a complete service experience. Our solutions combine cutting-edge technology with human-centered design to create systems that are powerful, intuitive, and scalable.'
       },
       goals: {
-        title: 'Our Future Goals',
-        innovation: 'Becoming a leading innovator in digital transformation through cutting-edge technology solutions.',
-        expansion: 'Expanding our reach to serve clients globally with scalable solutions that address diverse market needs.',
-        sustainability: 'Developing solutions that contribute to a more sustainable digital ecosystem.'
+        title: 'Our Commitments',
+        innovation: 'Delivering innovative solutions tailored to your specific industry requirements with transparent pricing and no hidden costs.',
+        expansion: 'Providing 24/7 technical support and maintenance to ensure your systems operate flawlessly and adapt to your evolving business needs.',
+        sustainability: 'Building long-term partnerships focused on your continued success through regular updates, performance optimization, and strategic guidance.'
+      },
+      industries: {
+        title: 'Industries We Serve',
+        description: 'Our expertise spans across multiple sectors, delivering customized solutions for e-commerce, retail, hospitality, corporate enterprises, heavy industry, and more.',
+        button: 'Explore Industry Solutions'
       }
     },
     services: {
-      title: 'Our Services',
-      subtitle: 'Cutting-edge solutions tailored to transform your digital presence and operational capabilities.',
+      title: 'Custom Software Solutions For Every Business Need',
+      subtitle: 'From e-commerce platforms to enterprise systems, we deliver tailor-made solutions with ongoing support to maximize your ROI.',
       web: 'Web Development',
-      webDescription: 'Creating responsive, high-performance websites and web applications with cutting-edge technologies and futuristic design.',
+      webDescription: 'High-performance, secure websites and web applications optimized for conversion. We create responsive designs that load quickly, rank well in search engines, and provide frictionless user experiences that drive sales.',
       mobile: 'Mobile App Development',
-      mobileDescription: 'Building advanced native and cross-platform mobile applications with immersive user experiences and seamless functionality.',
-      data: 'Data Analytics',
-      dataDescription: 'Transforming complex data into actionable insights through advanced analytics, visualization, and AI-powered predictions.',
-      ai: 'AI Solutions',
-      aiDescription: 'Implementing artificial intelligence and machine learning to automate processes, enhance decision-making, and create smarter systems.',
-      security: 'Cybersecurity',
-      securityDescription: 'Protecting your digital assets with advanced security solutions, vulnerability assessments, and comprehensive threat monitoring.',
-      cloud: 'Cloud Services',
-      cloudDescription: 'Leveraging cloud platforms to build scalable, resilient infrastructure and services that adapt to your business needs.',
-      learnMore: 'Learn more'
+      mobileDescription: 'Native and cross-platform applications built for real-world usage. Our mobile solutions feature offline functionality, push notifications, and seamless payment processing to enhance user engagement and retention.',
+      data: 'Data Analytics & Integration',
+      dataDescription: 'Transform your business data into actionable intelligence. We build custom dashboards and reporting systems that integrate with your existing tools to provide real-time insights for better decision-making.',
+      ai: 'AI & Automation Solutions',
+      aiDescription: 'Cutting-edge AI applications that reduce costs and improve efficiency. From customer service chatbots to predictive maintenance systems, we help you automate routine tasks and uncover new business opportunities.',
+      security: 'Cybersecurity Services',
+      securityDescription: 'Comprehensive protection for your digital assets and customer data. Our security solutions include vulnerability assessments, penetration testing, compliance auditing, and 24/7 monitoring to prevent breaches.',
+      cloud: 'Custom Hosting & Infrastructure',
+      cloudDescription: 'Reliable, scalable hosting solutions with guaranteed uptime. Our managed infrastructure services include load balancing, automatic scaling, database management, and continuous backup protection.',
+      payment: 'Payment Gateway Integration',
+      paymentDescription: 'Secure, seamless payment processing for your digital platforms. We implement and customize payment solutions that support multiple currencies, subscription billing, and marketplace transactions.',
+      support: '24/7 Technical Support',
+      supportDescription: 'Round-the-clock assistance for all your technology needs. Our dedicated support team provides monitoring, maintenance, troubleshooting, and regular updates to ensure your systems run flawlessly.',
+      learnMore: 'View Service Details',
+      cta: 'Contact us for a customized solution'
     },
     projects: {
       title: 'Featured Projects',
@@ -107,8 +120,8 @@ export const translations = {
       }
     },
     contact: {
-      title: 'Get in Touch',
-      subtitle: 'Ready to transform your digital presence? Contact us to discuss your project.',
+      title: 'Ready to Transform Your Business?',
+      subtitle: 'Contact us today to discuss how our customized software solutions can help you achieve your business goals.',
       form: {
         name: 'Name',
         namePlaceholder: 'Your name',
@@ -118,7 +131,7 @@ export const translations = {
         subjectPlaceholder: 'Select a subject',
         otherSubject: 'Other',
         message: 'Message',
-        messagePlaceholder: 'Your message...',
+        messagePlaceholder: 'Tell us about your project requirements...',
         send: 'Send Message',
         sending: 'Sending...'
       },
@@ -126,7 +139,6 @@ export const translations = {
         title: 'Contact Information',
         subtitle: 'Feel free to reach out to us through any of the following channels:',
         email: 'Email',
-        phone: 'Phone',
         location: 'Location',
         address1: 'Tech Innovation Hub',
         address2: '1234 Future Avenue',
@@ -137,19 +149,19 @@ export const translations = {
       },
       success: {
         title: 'Message Sent',
-        message: 'Thank you for your message. We will get back to you soon.'
+        message: 'Thank you for your message. We will get back to you within 24 hours.'
       },
       error: {
         title: 'Error',
-        message: 'There was an error sending your message. Please try again.'
+        message: 'There was an error sending your message. Please try again or contact us directly at info@veloratech.com.'
       }
     },
     footer: {
-      about: 'Innovative technology solutions that transform businesses and reshape digital experiences.',
+      about: 'Velora Tech delivers innovative software solutions for businesses across industries. Our team of experts specializes in custom development, hosting, and 24/7 support.',
       quickLinks: 'Quick Links',
       services: 'Services',
       newsletter: 'Newsletter',
-      subscribeText: 'Subscribe to our newsletter for the latest updates and news.',
+      subscribeText: 'Subscribe to our newsletter for the latest tech insights and company updates.',
       emailPlaceholder: 'Your email',
       subscribe: 'Subscribe',
       privacyNote: 'We respect your privacy. Unsubscribe at any time.',
