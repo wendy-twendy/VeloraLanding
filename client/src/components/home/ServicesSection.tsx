@@ -32,8 +32,7 @@ export default function ServicesSection() {
       borderColor: 'border-primary-cyan/20',
       hoverBorderColor: 'border-primary-cyan/60',
       shadowColor: 'shadow-[0_0_30px_rgba(0,255,245,0.2)]',
-      textColor: 'text-primary-cyan',
-      linkText: t('services.learnMore')
+      textColor: 'text-primary-cyan'
     },
     {
       icon: <Smartphone className="h-8 w-8 text-primary-magenta" />,
@@ -44,8 +43,7 @@ export default function ServicesSection() {
       borderColor: 'border-primary-magenta/20',
       hoverBorderColor: 'border-primary-magenta/60',
       shadowColor: 'shadow-[0_0_30px_rgba(255,0,221,0.2)]',
-      textColor: 'text-primary-magenta',
-      linkText: t('services.learnMore')
+      textColor: 'text-primary-magenta'
     },
     {
       icon: <BarChart3 className="h-8 w-8 text-accent-green" />,
@@ -56,8 +54,7 @@ export default function ServicesSection() {
       borderColor: 'border-accent-green/20',
       hoverBorderColor: 'border-accent-green/60',
       shadowColor: 'shadow-[0_0_30px_rgba(0,255,170,0.2)]',
-      textColor: 'text-accent-green',
-      linkText: t('services.learnMore')
+      textColor: 'text-accent-green'
     },
     {
       icon: <Brain className="h-8 w-8 text-secondary-purple" />,
@@ -68,8 +65,7 @@ export default function ServicesSection() {
       borderColor: 'border-secondary-purple/20',
       hoverBorderColor: 'border-secondary-purple/60',
       shadowColor: 'shadow-[0_0_30px_rgba(121,40,202,0.2)]',
-      textColor: 'text-secondary-purple',
-      linkText: t('services.learnMore')
+      textColor: 'text-secondary-purple'
     },
     {
       icon: <Shield className="h-8 w-8 text-secondary-pink" />,
@@ -80,8 +76,7 @@ export default function ServicesSection() {
       borderColor: 'border-secondary-pink/20',
       hoverBorderColor: 'border-secondary-pink/60',
       shadowColor: 'shadow-[0_0_30px_rgba(255,0,128,0.2)]',
-      textColor: 'text-secondary-pink',
-      linkText: t('services.learnMore')
+      textColor: 'text-secondary-pink'
     },
     {
       icon: <Server className="h-8 w-8 text-accent-yellow" />,
@@ -92,8 +87,7 @@ export default function ServicesSection() {
       borderColor: 'border-accent-yellow/20',
       hoverBorderColor: 'border-accent-yellow/60',
       shadowColor: 'shadow-[0_0_30px_rgba(255,204,0,0.2)]',
-      textColor: 'text-accent-yellow',
-      linkText: t('services.learnMore')
+      textColor: 'text-accent-yellow'
     }
   ];
   
