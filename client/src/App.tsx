@@ -6,6 +6,7 @@ import Services from "@/pages/Services";
 import Projects from "@/pages/Projects";
 import NotFound from "@/pages/not-found";
 import { LanguageProvider } from "@/hooks/useLanguage";
+import { ThemeProvider } from "@/hooks/useTheme";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -21,23 +22,25 @@ function App() {
   if (!mounted) return null;
 
   return (
-    <LanguageProvider>
-      <div className="flex flex-col min-h-screen">
-        <Navbar />
-        <main className="flex-grow">
-          <Switch>
-            <Route path="/" component={Home} />
-            <Route path="/services" component={Services} />
-            <Route path="/projects" component={Projects} />
-            <Route path="/portfolio" component={Projects} />
-            <Route component={NotFound} />
-          </Switch>
-        </main>
-        <Footer />
-        <ScrollToTop />
-        <Toaster />
-      </div>
-    </LanguageProvider>
+    <ThemeProvider>
+      <LanguageProvider>
+        <div className="flex flex-col min-h-screen">
+          <Navbar />
+          <main className="flex-grow">
+            <Switch>
+              <Route path="/" component={Home} />
+              <Route path="/services" component={Services} />
+              <Route path="/projects" component={Projects} />
+              <Route path="/portfolio" component={Projects} />
+              <Route component={NotFound} />
+            </Switch>
+          </main>
+          <Footer />
+          <ScrollToTop />
+          <Toaster />
+        </div>
+      </LanguageProvider>
+    </ThemeProvider>
   );
 }
 
