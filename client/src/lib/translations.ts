@@ -103,6 +103,8 @@ export const translations = {
     projects: {
       title: 'Featured Projects',
       subtitle: 'Explore our most innovative and impactful digital solutions.',
+      allProjectsTitle: 'Our Complete Project Portfolio',
+      allProjectsDescription: 'Discover how we have helped businesses across industries achieve digital transformation through innovative software solutions.',
       filters: {
         all: 'All',
         web: 'Web',
@@ -215,7 +217,11 @@ export const translations = {
       projects: 'Projektet',
       testimonials: 'Dëshmitë',
       contact: 'Kontakt',
-      language: 'Gjuha'
+      language: 'Gjuha',
+      industries: 'Industritë',
+      hosting: 'Hostimi',
+      support: 'Mbështetje 24/7',
+      back: 'Kthehu në Faqen Kryesore'
     },
     hero: {
       title: 'Zgjidhje Teknologjike Futuriste',
@@ -244,23 +250,67 @@ export const translations = {
     services: {
       title: 'Shërbimet Tona',
       subtitle: 'Zgjidhje të avancuara të përshtatura për të transformuar praninë tuaj dixhitale dhe aftësitë operacionale.',
+      allServicesTitle: 'Oferta Jonë e Plotë e Shërbimeve',
+      allServicesDescription: 'Eksploroni gamën tonë të plotë të shërbimeve të transformimit dixhital të dizajnuara për të ndihmuar bizneset e të gjitha madhësive të kenë sukses në tregun e sotëm të drejtuar nga teknologjia.',
+      comingSoon: 'Faqet e detajuara të shërbimeve vijnë së shpejti! Na kontaktoni për më shumë informacion në lidhje me cilindo nga shërbimet tona.',
+      
       web: 'Zhvillimi i Uebit',
       webDescription: 'Krijimi i faqeve të internetit dhe aplikacioneve web me performancë të lartë, teknologji të avancuara dhe dizajn futuristik.',
+      webLearnMore: 'Mëso më shumë',
+      webLearnMorePath: '/services/web-development',
+      webTooltip: 'Shiko shërbimet tona të plota të zhvillimit të uebit duke përfshirë e-commerce, aplikacione progresive web dhe zgjidhje CMS',
+      
       mobile: 'Zhvillimi i Aplikacioneve Mobile',
       mobileDescription: 'Ndërtimi i aplikacioneve të avancuara native dhe cross-platform me përvoja imersive dhe funksionalitet të rrjedhshëm.',
+      mobileLearnMore: 'Mëso më shumë',
+      mobileLearnMorePath: '/services/mobile-development',
+      mobileTooltip: 'Eksploroni procesin tonë të zhvillimit të aplikacioneve mobile, teknologjitë dhe rastet e suksesshme të studimit',
+      
       data: 'Analitika e të Dhënave',
       dataDescription: 'Transformimi i të dhënave komplekse në njohuri të veprueshme përmes analizave të avancuara, vizualizimit dhe parashikimeve të fuqizuara nga AI.',
+      dataLearnMore: 'Mëso më shumë',
+      dataLearnMorePath: '/services/data-analytics',
+      dataTooltip: 'Zbuloni se si shërbimet tona të analizave të të dhënave mund të zbulojnë njohuri dhe të nxisin rritjen për biznesin tuaj',
+      
       ai: 'Zgjidhjet AI',
       aiDescription: 'Implementimi i inteligjencës artificiale dhe mësimit të makinerisë për të automatizuar proceset, përmirësuar vendimmarrjen dhe krijuar sisteme më inteligjente.',
+      aiLearnMore: 'Mëso më shumë',
+      aiLearnMorePath: '/services/ai-solutions',
+      aiTooltip: 'Mësoni për strategjitë tona të implementimit të AI dhe se si ato mund të transformojnë operacionet tuaja',
+      
       security: 'Siguria Kibernetike',
       securityDescription: 'Mbrojtja e aseteve tuaja dixhitale me zgjidhje të avancuara të sigurisë, vlerësime të cënueshmërisë dhe monitorim gjithëpërfshirës të kërcënimeve.',
+      securityLearnMore: 'Mëso më shumë',
+      securityLearnMorePath: '/services/cybersecurity',
+      securityTooltip: 'Mësoni se si shërbimet tona të sigurisë kibernetike mbrojnë biznesin tuaj nga kërcënimet dixhitale në zhvillim',
+      
       cloud: 'Shërbimet Cloud',
       cloudDescription: 'Shfrytëzimi i platformave cloud për të ndërtuar infrastrukturë dhe shërbime të shkallëzueshme dhe elastike që përshtaten me nevojat e biznesit tuaj.',
-      learnMore: 'Mëso më shumë'
+      cloudLearnMore: 'Mëso më shumë',
+      cloudLearnMorePath: '/services/hosting',
+      cloudTooltip: 'Zbuloni zgjidhjet tona të hostimit në cloud dhe se si ato ofrojnë besueshmëri dhe performancë superiore',
+      
+      payment: 'Integrimi i Portave të Pagesave',
+      paymentDescription: 'Përpunim i sigurt dhe i pandërprerë i pagesave për platformat tuaja dixhitale. Ne implementojmë dhe përshtatim zgjidhje pagese që mbështesin monedha të shumta dhe faturime me abonim.',
+      paymentLearnMore: 'Mëso më shumë',
+      paymentLearnMorePath: '/services/payment-solutions',
+      paymentTooltip: 'Mësoni rreth zgjidhjeve tona të përpunimit të pagesave për bizneset e-commerce dhe me bazë abonimesh',
+      
+      support: 'Mbështetje Teknike 24/7',
+      supportDescription: 'Asistencë gjatë gjithë kohës për të gjitha nevojat tuaja teknologjike. Ekipi ynë i dedikuar i mbështetjes ofron monitorim, mirëmbajtje dhe përditësime të rregullta.',
+      supportLearnMore: 'Mëso më shumë',
+      supportLearnMorePath: '/services/technical-support',
+      supportTooltip: 'Shihni detajet për paketat tona gjithëpërfshirëse të mbështetjes',
+      
+      learnMore: 'Mëso më shumë',
+      cta: 'Na kontaktoni për një zgjidhje të personalizuar',
+      viewAllServices: 'Shiko Të Gjitha Shërbimet'
     },
     projects: {
       title: 'Projektet e Veçanta',
       subtitle: 'Eksploroni zgjidhjet tona më inovative dhe ndikuese dixhitale.',
+      allProjectsTitle: 'Portofoli Ynë i Plotë i Projekteve',
+      allProjectsDescription: 'Zbuloni se si kemi ndihmuar bizneset në të gjitha industritë të arrijnë transformimin dixhital përmes zgjidhjeve inovative të softuerit.',
       filters: {
         all: 'Të Gjitha',
         web: 'Ueb',
