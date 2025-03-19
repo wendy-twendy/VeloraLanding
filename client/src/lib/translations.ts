@@ -289,7 +289,8 @@ export const translations = {
         description: 'Platformë trajnimi në realitet virtual me feedback në kohë reale dhe algoritme adaptive të të mësuarit.'
       },
       viewDemo: 'Shiko Demonstrimin',
-      backToProjects: 'Kthehu te Projektet'
+      backToProjects: 'Kthehu te Projektet',
+      viewAllProjects: 'Shiko Të Gjitha Projektet'
     },
     testimonials: {
       title: 'Dëshmitë e Klientëve',

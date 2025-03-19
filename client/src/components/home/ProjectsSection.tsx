@@ -84,7 +84,7 @@ export default function ProjectsSection() {
           
           {/* Projects Grid */}
           <motion.div 
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 gap-8"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
@@ -98,7 +98,7 @@ export default function ProjectsSection() {
               }
             }}
           >
-            {projects.map((project) => (
+            {projects.slice(0, 4).map((project) => (
               <motion.div 
                 key={project.id}
                 className="group relative overflow-hidden rounded-lg neon-border cursor-pointer"
@@ -130,6 +130,25 @@ export default function ProjectsSection() {
                 </div>
               </motion.div>
             ))}
+          </motion.div>
+          
+          {/* View All Projects Button */}
+          <motion.div 
+            className="flex justify-center mt-14"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <Link href="/portfolio">
+              <Button 
+                variant="outline" 
+                className="group border-accent-yellow bg-transparent hover:bg-accent-yellow text-light hover:text-dark border gap-2 px-6 py-2"
+              >
+                {t('projects.viewAllProjects')}
+                <ChevronRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+              </Button>
+            </Link>
           </motion.div>
         </div>
       </section>
