@@ -17,7 +17,6 @@ interface ServiceCard {
   hoverBorderColor: string;
   shadowColor: string;
   textColor: string;
-  linkText: string;
 }
 
 export default function ServicesSection() {
@@ -163,14 +162,7 @@ export default function ServicesSection() {
               <h3 className={`text-xl sm:text-2xl font-display font-bold text-light mb-2 sm:mb-3 group-hover:${service.textColor} transition-colors duration-300`}>
                 {service.title}
               </h3>
-              <p className="text-sm sm:text-base text-light/70 mb-4 sm:mb-6">{service.description}</p>
-              
-              <a href="#" className={`inline-flex items-center ${service.textColor} hover:text-accent-green transition-colors duration-300 text-sm sm:text-base`}>
-                <span>{service.linkText}</span>
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 sm:h-5 sm:w-5 ml-1 group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-              </a>
+              <p className="text-sm sm:text-base text-light/70">{service.description}</p>
             </motion.div>
           ))}
         </motion.div>

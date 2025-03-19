@@ -18,11 +18,7 @@ export default function AboutSection() {
     })
   };
   
-  const goals = [
-    { title: 'Innovation Leadership', text: 'Becoming a leading innovator in digital transformation through cutting-edge technology solutions and creative approaches.' },
-    { title: 'Global Expansion', text: 'Expanding our reach to serve clients globally with scalable solutions that address diverse market needs.' },
-    { title: 'Sustainable Technology', text: 'Developing solutions that not only meet current needs but contribute to a more sustainable digital ecosystem.' }
-  ];
+  // Future goals removed
   
   return (
     <section id="about" className="py-24 relative overflow-hidden">
@@ -94,32 +90,7 @@ export default function AboutSection() {
               <h3 className="text-2xl font-display font-bold text-primary-magenta">{t('about.approach.title')}</h3>
               <p className="text-light/80">{t('about.approach.description')}</p>
             </motion.div>
-            
-            {/* Future Goals Section */}
-            <div className="relative pl-8 border-l border-primary-cyan/30 space-y-8">
-              <h3 className="text-2xl font-display font-bold text-accent-yellow -ml-8 mb-6">Our Future Goals</h3>
-              {goals.map((item, index) => (
-                <motion.div 
-                  key={item.title}
-                  className="relative"
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, amount: 0.1 }}
-                  variants={fadeIn}
-                  custom={index + 3}
-                >
-                  <div className={`absolute -left-10 top-0 w-5 h-5 rounded-full ${
-                    index === 0 ? 'bg-primary-cyan' : 
-                    index === 1 ? 'bg-secondary-pink' : 
-                    'bg-accent-green'
-                  } animate-pulse-glow`}></div>
-                  <div>
-                    <h4 className="text-xl font-display text-primary-foreground">{item.title}</h4>
-                    <p className="text-light/80">{item.text}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
+            {/* Future Goals Section removed */}
           </div>
         </div>
       </div>
