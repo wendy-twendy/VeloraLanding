@@ -20,7 +20,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { 
-  Mail, Phone, MapPin, 
+  Mail, MapPin, 
 } from 'lucide-react';
 import { 
   Select,
@@ -82,8 +82,8 @@ export default function ContactSection() {
     { value: 'mobile', label: t('services.mobile') },
     { value: 'data', label: t('services.data') },
     { value: 'ai', label: t('services.ai') },
-    { value: 'blockchain', label: t('services.blockchain') },
-    { value: 'ar', label: t('services.ar') },
+    { value: 'security', label: t('services.security') },
+    { value: 'cloud', label: t('services.cloud') },
     { value: 'other', label: t('contact.form.otherSubject') }
   ];
   
@@ -249,17 +249,6 @@ export default function ContactSection() {
                   <div>
                     <h4 className="text-light font-semibold">{t('contact.info.email')}</h4>
                     <a href="mailto:info@veloratech.com" className="text-primary-cyan hover:text-accent-green transition-colors duration-300">info@veloratech.com</a>
-                  </div>
-                </div>
-                
-                {/* Phone */}
-                <div className="flex items-start">
-                  <div className="p-3 rounded-full bg-primary-magenta/10 text-primary-magenta mr-4">
-                    <Phone className="h-6 w-6" />
-                  </div>
-                  <div>
-                    <h4 className="text-light font-semibold">{t('contact.info.phone')}</h4>
-                    <a href="tel:+1234567890" className="text-primary-magenta hover:text-accent-green transition-colors duration-300">+1 (234) 567-890</a>
                   </div>
                 </div>
                 

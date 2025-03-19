@@ -50,8 +50,11 @@ export default function TestimonialsSection() {
     }
   ];
   
-  // Auto-rotate testimonials
+  // Auto-rotate testimonials on mobile only
   useEffect(() => {
+    // Only auto-rotate on mobile devices
+    const isMobile = window.innerWidth < 768;
+    
     const resetTimeout = () => {
       if (timeoutRef.current) {
         clearTimeout(timeoutRef.current);
@@ -60,10 +63,12 @@ export default function TestimonialsSection() {
     
     resetTimeout();
     
-    timeoutRef.current = setTimeout(() => {
-      setDirection(1);
-      setCurrent((prevIndex) => (prevIndex + 1) % testimonials.length);
-    }, 5000);
+    if (isMobile) {
+      timeoutRef.current = setTimeout(() => {
+        setDirection(1);
+        setCurrent((prevIndex) => (prevIndex + 1) % testimonials.length);
+      }, 5000);
+    }
     
     return () => resetTimeout();
   }, [current, testimonials.length]);
@@ -107,96 +112,49 @@ export default function TestimonialsSection() {
           </p>
         </motion.div>
         
-        {/* Testimonials Carousel */}
-        <motion.div 
-          className="relative overflow-hidden"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
-          <div className="flex flex-col gap-8 relative min-h-[300px]">
-            {/* Mobile View with Animation */}
-            <div className="md:hidden w-full relative">
-              <AnimatePresence custom={direction} initial={false}>
-                <motion.div 
-                  key={current}
-                  custom={direction}
-                  variants={slideVariants}
-                  initial="enter"
-                  animate="center"
-                  exit="exit"
-                  transition={{ duration: 0.5 }}
-                  className="absolute inset-0"
-                >
-                  {/* Mobile: only show current testimonial */}
-                  <div className={`bg-dark/50 backdrop-blur-sm p-8 rounded-lg ${testimonials[current].color} relative`}>
-                    <div className={`absolute -top-4 -left-4 w-10 h-10 flex items-center justify-center rounded-full ${testimonials[current].iconColor}`}>
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
-                      </svg>
-                    </div>
-                    
-                    <div className="text-light/90 italic mb-6">
-                      "{testimonials[current].content}"
-                    </div>
-                    
-                    <div className="flex items-center">
-                      <div className={`w-12 h-12 rounded-full overflow-hidden mr-4 border ${testimonials[current].color}`}>
-                        <img 
-                          src={testimonials[current].image} 
-                          alt={testimonials[current].author} 
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                      <div>
-                        <h4 className="text-light font-semibold">{testimonials[current].author}</h4>
-                        <p className="text-light/60 text-sm">{testimonials[current].position}</p>
-                      </div>
-                    </div>
+        {/* Mobile Testimonials Carousel */}
+        <div className="md:hidden relative min-h-[300px] mb-8">
+          <AnimatePresence custom={direction} initial={false}>
+            <motion.div 
+              key={current}
+              custom={direction}
+              variants={slideVariants}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              transition={{ duration: 0.5 }}
+              className="absolute w-full"
+            >
+              <div className={`bg-dark/50 backdrop-blur-sm p-6 rounded-lg ${testimonials[current].color} relative`}>
+                <div className={`absolute -top-4 -left-4 w-10 h-10 flex items-center justify-center rounded-full ${testimonials[current].iconColor}`}>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
+                  </svg>
+                </div>
+                
+                <div className="text-light/90 italic mb-6">
+                  "{testimonials[current].content}"
+                </div>
+                
+                <div className="flex items-center">
+                  <div className={`w-12 h-12 rounded-full overflow-hidden mr-4 border ${testimonials[current].color}`}>
+                    <img 
+                      src={testimonials[current].image} 
+                      alt={testimonials[current].author} 
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                </motion.div>
-              </AnimatePresence>
-            </div>
-            
-            {/* Desktop View - Static */}
-            <div className="hidden md:grid md:grid-cols-3 gap-8 w-full">
-              {/* Desktop: show all testimonials */}
-              {testimonials.map((testimonial) => (
-                <div 
-                  key={`desktop-${testimonial.id}`} 
-                  className={`bg-dark/50 backdrop-blur-sm p-8 rounded-lg ${testimonial.color} relative`}
-                >
-                  <div className={`absolute -top-4 -left-4 w-10 h-10 flex items-center justify-center rounded-full ${testimonial.iconColor}`}>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
-                    </svg>
-                  </div>
-                  
-                  <div className="text-light/90 italic mb-6">
-                    "{testimonial.content}"
-                  </div>
-                  
-                  <div className="flex items-center">
-                    <div className={`w-12 h-12 rounded-full overflow-hidden mr-4 border ${testimonial.color}`}>
-                      <img 
-                        src={testimonial.image} 
-                        alt={testimonial.author} 
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div>
-                      <h4 className="text-light font-semibold">{testimonial.author}</h4>
-                      <p className="text-light/60 text-sm">{testimonial.position}</p>
-                    </div>
+                  <div>
+                    <h4 className="text-light font-semibold">{testimonials[current].author}</h4>
+                    <p className="text-light/60 text-sm">{testimonials[current].position}</p>
                   </div>
                 </div>
-              ))}
-            </div>
-          </div>
+              </div>
+            </motion.div>
+          </AnimatePresence>
           
-          {/* Carousel Controls */}
-          <div className="flex justify-center mt-10 space-x-2">
+          {/* Mobile Carousel Controls */}
+          <div className="flex justify-center mt-64 space-x-2">
             {testimonials.map((_, index) => (
               <button 
                 key={index} 
@@ -208,7 +166,45 @@ export default function TestimonialsSection() {
               />
             ))}
           </div>
-        </motion.div>
+        </div>
+        
+        {/* Desktop Static Testimonials */}
+        <div className="hidden md:grid md:grid-cols-3 gap-8">
+          {testimonials.map((testimonial) => (
+            <motion.div 
+              key={`desktop-${testimonial.id}`}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.1 }}
+              transition={{ duration: 0.5 }}
+              className={`bg-dark/50 backdrop-blur-sm p-6 rounded-lg ${testimonial.color} relative`}
+            >
+              <div className={`absolute -top-4 -left-4 w-10 h-10 flex items-center justify-center rounded-full ${testimonial.iconColor}`}>
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
+                </svg>
+              </div>
+              
+              <div className="text-light/90 italic mb-6">
+                "{testimonial.content}"
+              </div>
+              
+              <div className="flex items-center">
+                <div className={`w-12 h-12 rounded-full overflow-hidden mr-4 border ${testimonial.color}`}>
+                  <img 
+                    src={testimonial.image} 
+                    alt={testimonial.author} 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div>
+                  <h4 className="text-light font-semibold">{testimonial.author}</h4>
+                  <p className="text-light/60 text-sm">{testimonial.position}</p>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );
