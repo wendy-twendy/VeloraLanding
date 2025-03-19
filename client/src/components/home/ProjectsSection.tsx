@@ -3,7 +3,8 @@
 import { useState } from 'react';
 import { motion } from "framer-motion";
 import { useLanguage } from "@/hooks/useLanguage";
-import { X, ExternalLink } from "lucide-react";
+import { Link } from "wouter";
+import { X, ExternalLink, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 

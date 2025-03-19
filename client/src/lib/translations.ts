@@ -12,7 +12,7 @@ export const translations = {
       support: '24/7 Support'
     },
     hero: {
-      title: 'Custom Software Solutions That Drive Growth',
+      title: 'Future-Ready Software Solutions',
       description: 'Partner with Velora Tech to transform your business with tailored software solutions. From e-commerce platforms to AI-powered applications, we deliver cutting-edge technology that generates real results and measurable ROI.',
       servicesButton: 'Explore Solutions',
       contactButton: 'Get a Free Consultation'
@@ -45,22 +45,55 @@ export const translations = {
       subtitle: 'From e-commerce platforms to enterprise systems, we deliver tailor-made solutions with ongoing support to maximize your ROI.',
       web: 'Web Development',
       webDescription: 'High-performance, secure websites and web applications optimized for conversion. We create responsive designs that load quickly, rank well in search engines, and provide frictionless user experiences that drive sales.',
+      webLearnMore: 'Learn More',
+      webLearnMorePath: '/services/web-development',
+      webTooltip: 'View our complete web development services including e-commerce, progressive web apps, and CMS solutions',
+      
       mobile: 'Mobile App Development',
       mobileDescription: 'Native and cross-platform applications built for real-world usage. Our mobile solutions feature offline functionality, push notifications, and seamless payment processing to enhance user engagement and retention.',
+      mobileLearnMore: 'Learn More',
+      mobileLearnMorePath: '/services/mobile-development',
+      mobileTooltip: 'Explore our mobile app development process, technologies, and successful case studies',
+      
       data: 'Data Analytics & Integration',
       dataDescription: 'Transform your business data into actionable intelligence. We build custom dashboards and reporting systems that integrate with your existing tools to provide real-time insights for better decision-making.',
+      dataLearnMore: 'Learn More',
+      dataLearnMorePath: '/services/data-analytics',
+      dataTooltip: 'Discover how our data analytics services can unlock insights and drive growth for your business',
+      
       ai: 'AI & Automation Solutions',
       aiDescription: 'Cutting-edge AI applications that reduce costs and improve efficiency. From customer service chatbots to predictive maintenance systems, we help you automate routine tasks and uncover new business opportunities.',
+      aiLearnMore: 'Learn More',
+      aiLearnMorePath: '/services/ai-solutions',
+      aiTooltip: 'Learn about our AI implementation strategies and how they can transform your operations',
+      
       security: 'Cybersecurity Services',
       securityDescription: 'Comprehensive protection for your digital assets and customer data. Our security solutions include vulnerability assessments, penetration testing, compliance auditing, and 24/7 monitoring to prevent breaches.',
+      securityLearnMore: 'Learn More',
+      securityLearnMorePath: '/services/cybersecurity',
+      securityTooltip: 'Find out how our cybersecurity services protect your business from evolving digital threats',
+      
       cloud: 'Custom Hosting & Infrastructure',
       cloudDescription: 'Reliable, scalable hosting solutions with guaranteed uptime. Our managed infrastructure services include load balancing, automatic scaling, database management, and continuous backup protection.',
+      cloudLearnMore: 'Learn More',
+      cloudLearnMorePath: '/services/hosting',
+      cloudTooltip: 'Discover our cloud hosting solutions and how they provide superior reliability and performance',
+      
       payment: 'Payment Gateway Integration',
       paymentDescription: 'Secure, seamless payment processing for your digital platforms. We implement and customize payment solutions that support multiple currencies, subscription billing, and marketplace transactions.',
+      paymentLearnMore: 'Learn More',
+      paymentLearnMorePath: '/services/payment-solutions',
+      paymentTooltip: 'Learn about our payment processing solutions for e-commerce and subscription-based businesses',
+      
       support: '24/7 Technical Support',
       supportDescription: 'Round-the-clock assistance for all your technology needs. Our dedicated support team provides monitoring, maintenance, troubleshooting, and regular updates to ensure your systems run flawlessly.',
+      supportLearnMore: 'Learn More',
+      supportLearnMorePath: '/services/technical-support',
+      supportTooltip: 'See details about our comprehensive support packages and SLA options',
+      
       learnMore: 'View Service Details',
-      cta: 'Contact us for a customized solution'
+      cta: 'Contact us for a customized solution',
+      viewAllServices: 'View All Services'
     },
     projects: {
       title: 'Featured Projects',
@@ -98,7 +131,8 @@ export const translations = {
         description: 'Virtual reality training platform with real-time feedback and adaptive learning algorithms.'
       },
       viewDemo: 'View Demo',
-      backToProjects: 'Back to Projects'
+      backToProjects: 'Back to Projects',
+      viewAllProjects: 'View All Projects'
     },
     testimonials: {
       title: 'Client Testimonials',
