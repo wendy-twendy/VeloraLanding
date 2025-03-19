@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Switch, Route } from "wouter";
 import { Toaster } from "@/components/ui/toaster";
 import Home from "@/pages/Home";
+import Services from "@/pages/Services";
+import Projects from "@/pages/Projects";
 import NotFound from "@/pages/not-found";
 import { LanguageProvider } from "@/hooks/useLanguage";
 import Navbar from "@/components/layout/Navbar";
@@ -25,6 +27,9 @@ function App() {
         <main className="flex-grow">
           <Switch>
             <Route path="/" component={Home} />
+            <Route path="/services" component={Services} />
+            <Route path="/projects" component={Projects} />
+            <Route path="/portfolio" component={Projects} />
             <Route component={NotFound} />
           </Switch>
         </main>

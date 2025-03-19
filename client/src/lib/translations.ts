@@ -9,7 +9,8 @@ export const translations = {
       language: 'Language',
       industries: 'Industries',
       hosting: 'Hosting',
-      support: '24/7 Support'
+      support: '24/7 Support',
+      back: 'Back to Home'
     },
     hero: {
       title: 'Future-Ready Software Solutions',
@@ -43,6 +44,10 @@ export const translations = {
     services: {
       title: 'Custom Software Solutions For Every Business Need',
       subtitle: 'From e-commerce platforms to enterprise systems, we deliver tailor-made solutions with ongoing support to maximize your ROI.',
+      allServicesTitle: 'Our Complete Service Offerings',
+      allServicesDescription: 'Explore our full range of digital transformation services designed to help businesses of all sizes succeed in the technology-driven marketplace.',
+      comingSoon: 'Detailed service pages coming soon! Contact us for more information about any of our services.',
+      
       web: 'Web Development',
       webDescription: 'High-performance, secure websites and web applications optimized for conversion. We create responsive designs that load quickly, rank well in search engines, and provide frictionless user experiences that drive sales.',
       webLearnMore: 'Learn More',
