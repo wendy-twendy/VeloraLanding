@@ -187,7 +187,7 @@ export default function ServicesSection() {
                 <TooltipProvider>
                   <Tooltip>
                     <TooltipTrigger asChild>
-                      <Link href={service.learnMorePath}>
+                      <Link href="/services">
                         <Button 
                           variant="link" 
                           className={`p-0 h-auto ${service.textColor} font-medium hover:opacity-80 transition-opacity flex items-center gap-1`}

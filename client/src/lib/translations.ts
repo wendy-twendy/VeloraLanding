@@ -38,7 +38,13 @@ export const translations = {
       industries: {
         title: 'Industries We Serve',
         description: 'Our expertise spans across multiple sectors, delivering customized solutions for e-commerce, retail, hospitality, corporate enterprises, heavy industry, and more.',
-        button: 'Explore Industry Solutions'
+        button: 'Explore Industry Solutions',
+        ecommerce: 'E-commerce & Retail',
+        finance: 'Finance & Banking',
+        education: 'Education & E-Learning',
+        healthcare: 'Healthcare',
+        realestate: 'Real Estate & Property',
+        manufacturing: 'Manufacturing & Industry'
       }
     },
     services: {
@@ -241,10 +247,21 @@ export const translations = {
         description: 'Ne kombinojmë teknologjitë më të fundit me parimet e dizajnit të përqendruar te njeriu për të ofruar zgjidhje që janë jo vetëm të avancuara teknologjikisht, por edhe intuitive dhe të aksesueshme.'
       },
       goals: {
-        title: 'Objektivat Tona për të Ardhmen',
-        innovation: 'Të bëhemi një udhëheqës inovator në transformimin dixhital përmes zgjidhjeve teknologjike të avancuara.',
-        expansion: 'Të zgjerojmë përfshirjen tonë për të shërbyer klientët globalisht me zgjidhje të shkallëzueshme që adresojnë nevoja të ndryshme të tregut.',
-        sustainability: 'Të zhvillojmë zgjidhje që kontribuojnë në një ekosistem dixhital më të qëndrueshëm.'
+        title: 'Angazhimet Tona',
+        innovation: 'Ofrimi i zgjidhjeve inovative të përshtatura për kërkesat specifike të industrisë suaj me çmime transparente dhe pa kosto të fshehura.',
+        expansion: 'Sigurimi i mbështetjes teknike 24/7 dhe mirëmbajtjes për të garantuar që sistemet tuaja të funksionojnë në mënyrë të përkryer dhe të përshtaten me nevojat tuaja në zhvillim të biznesit.',
+        sustainability: 'Ndërtimi i partneriteteve afatgjata të fokusuara në suksesin tuaj të vazhdueshëm përmes përditësimeve të rregullta, optimizimit të performancës dhe udhëzimeve strategjike.'
+      },
+      industries: {
+        title: 'Industritë Që Ne Shërbejmë',
+        description: 'Ekspertiza jonë shtrihet në sektorë të ndryshëm, duke ofruar zgjidhje të personalizuara për e-commerce, retail, hotelieri, ndërmarrje korporative, industri të rëndë dhe më shumë.',
+        button: 'Eksploro Zgjidhjet Sipas Industrisë',
+        ecommerce: 'E-commerce & Retail',
+        finance: 'Financa & Banking',
+        education: 'Edukim & E-Learning',
+        healthcare: 'Shëndetësi',
+        realestate: 'Pasuri të Paluajtshme',
+        manufacturing: 'Prodhim & Industri'
       }
     },
     services: {
@@ -304,7 +321,11 @@ export const translations = {
       
       learnMore: 'Mëso më shumë',
       cta: 'Na kontaktoni për një zgjidhje të personalizuar',
-      viewAllServices: 'Shiko Të Gjitha Shërbimet'
+      viewAllServices: 'Shiko Të Gjitha Shërbimet',
+      keyFeatures: 'Karakteristikat Kryesore',
+      businessBenefits: 'Përfitimet për Biznesin',
+      technologies: 'Teknologjitë',
+      learnMoreAboutSolutions: 'Mëso më shumë për zgjidhjet tona'
     },
     projects: {
       title: 'Projektet e Veçanta',
