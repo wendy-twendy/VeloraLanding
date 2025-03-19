@@ -104,7 +104,11 @@ export const translations = {
       
       learnMore: 'View Service Details',
       cta: 'Contact us for a customized solution',
-      viewAllServices: 'View All Services'
+      viewAllServices: 'View All Services',
+      keyFeatures: 'Key Features',
+      businessBenefits: 'Business Benefits',
+      technologies: 'Technologies',
+      learnMoreAboutSolutions: 'Learn more about our solutions'
     },
     projects: {
       title: 'Featured Projects',

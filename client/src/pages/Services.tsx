@@ -298,12 +298,12 @@ export default function Services() {
         </div>
         
         <Tabs defaultValue="services" className="w-full">
-          <TabsList className="w-full max-w-md mx-auto mb-10 bg-dark-border grid grid-cols-2">
+          <TabsList className="w-full max-w-md mx-auto mb-10 bg-dark-border grid grid-cols-2 text-base">
             <TabsTrigger value="services" className="data-[state=active]:bg-dark-card data-[state=active]:text-primary-cyan">
-              {t('services.title')}
+              Services
             </TabsTrigger>
             <TabsTrigger value="industries" className="data-[state=active]:bg-dark-card data-[state=active]:text-primary-magenta">
-              {t('about.industries.title')}
+              Industries
             </TabsTrigger>
           </TabsList>
           
